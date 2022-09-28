@@ -1,5 +1,8 @@
     html,
     body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin: 0;
         padding: 0;
         background: whitesmoke;
@@ -16,6 +19,7 @@
         --border-padding: 1em 1em;
         --font-size-text: 16px;
         --font-size-sous-titre: 24px;
+        height: 100vh;
     }
 
     input {
@@ -33,7 +37,7 @@
     h1 {
         font-size: 24px;
         font-family: 'Bodoni Moda';
-        text-align: left;
+        min-width: 160px;
 
     }
 
@@ -157,6 +161,22 @@
     details[open] .fa-angle-right {
         display: none;
 
+    }
+
+    details[open] summary~* {
+        animation: sweep 1s ease-in-out;
+    }
+
+    @keyframes sweep {
+        0% {
+            opacity: 0;
+            transform: translateX(-10px)
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0)
+        }
     }
 
     strong {
