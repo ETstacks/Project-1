@@ -17,8 +17,13 @@
         background: #F08080;
         border-width: 0.5px;
         border-color: lightgrey;
-        margin: 10px;
+        margin: 15px;
 
+    }
+
+    h1 {
+        font-size: 20px;
+        text-align: left;
     }
 
     button {
@@ -31,8 +36,9 @@
     }
 
     #loupe {
-        width: 15px;
-        height: 15px;
+        width: 25px;
+        height: 25px;
+        margin: -10px;
     }
 
     #logo {
@@ -44,15 +50,16 @@
 
     header {
         display: grid;
-        grid-template-columns: 1fr repeat(3, 0.1fr);
+        grid-template-columns: 1fr 1fr repeat(3, 0.1fr);
         background: #F76C6C;
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        top: 0;
 
-    #container {
-        position: relative;
-        min-height: 100%;
-        padding-bottom: 20px;
     }
-    
+
     footer {
         display: flex;
         background-color: #F76C6C;
