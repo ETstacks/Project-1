@@ -10,16 +10,15 @@ footer {
     background-color: #F76C6C;
     flex-direction: row;
     justify-content: space-around;
-    height: 50px;
+    height: 55px;
     position:absolute;
     width: 100%;
     bottom: 0;
 }
 
 
-a {
-    margin-top: 15px;
-    font-size: 20px;
+a img {
+    margin: 1em;
+    width: 30px;
+    height: 30px;
 }
-
-
