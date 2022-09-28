@@ -1,5 +1,40 @@
 @media screen and (max-width: 600px);
 
+/*  header */
+
+
+input {
+    display: flex;
+    width: 80px;
+    height: 20px;
+    justify-content: end;
+    background: #F08080;
+    border-width: 0.5px;
+    border-color: lightgrey;
+}
+
+button {
+    height: 30px;
+    width: 30px;
+    text-align: justify;
+    background-color: #F76C6C;
+    border-width: 0;
+}
+
+#loupe {
+    width: 20px;
+    height: 20px;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+}
+
 header {
-    background-color: black;
+    display: grid;
+    grid-template-columns: 1.65fr 1fr repeat(3, 0.1fr);
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(247, 108, 108, 1) 29%, rgba(247, 108, 108, 1) 100%);
 }
