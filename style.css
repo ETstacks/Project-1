@@ -46,5 +46,29 @@
         display: grid;
         grid-template-columns: 1fr repeat(3, 0.1fr);
         background: #F76C6C;
+
+    #container {
+        position: relative;
+        min-height: 100%;
+        padding-bottom: 20px;
+    }
+    
+    footer {
+        display: flex;
+        background-color: #F76C6C;
+        flex-direction: row;
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    a img {
+        margin: 1em;
+        width: 30px;
+        height: 30px;
     }
 }
