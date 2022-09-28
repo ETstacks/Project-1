@@ -1,7 +1,13 @@
 @media screen and (max-width: 600px);
 
-/*  header */
 
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
 
 input {
     display: flex;
@@ -27,14 +33,13 @@ button {
 }
 
 #logo {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     justify-content: center;
 }
 
 header {
     display: grid;
-    grid-template-columns: 1.65fr 1fr repeat(3, 0.1fr);
-    background: rgb(2, 0, 36);
-    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(247, 108, 108, 1) 29%, rgba(247, 108, 108, 1) 100%);
+    grid-template-columns: 1.9fr 1fr repeat(3, 0.1fr);
+    background: #F76C6C;
 }
