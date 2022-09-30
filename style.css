@@ -44,16 +44,18 @@
     button {
         height: 30px;
         width: 30px;
-        text-align: justify;
+        text-align: start;
         background-color: var(--first-color);
         border-width: 0;
         padding: 15px;
+
     }
 
     #loupe {
         width: 25px;
-        height: 25px;
+        height: -25px;
         margin: -20px;
+        text-align: start;
     }
 
     #logo {
@@ -64,8 +66,10 @@
     }
 
     header {
-        display: grid;
-        grid-template-columns: 1fr 1fr repeat(3, 0.1fr);
+        display: flex;
+
+        flex-direction: row;
+        justify-content: space-between;
         background: var(--first-color);
         position: fixed;
         width: 100%;
@@ -184,7 +188,6 @@
 
     h3 {
         font-family: var(--font-titre);
-        text-align: justify;
         font-size: var(--font-size-sous-titre);
 
     }
