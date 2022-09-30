@@ -5,10 +5,10 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    background: whitesmoke;
+    background: smokewhite;
     margin-top: 10px;
-    --first-color: rgb(161, 140, 122);
-
+    --first-color: #D5D2C8;
+    max-width: 800px;
     --font-size-titre: 40px;
     --font-titre: 'Roboto Slab';
     --font-texte: 'EB Garamond';
@@ -24,9 +24,13 @@ body {
 }
 
 h1 {
+
     font-size: 24px;
     font-family: 'Bodoni Moda';
     min-width: 160px;
+    color: #3d3c39;
+    text-align: center;
+    margin-right: 40px;
 
 }
 
@@ -36,14 +40,12 @@ button {
     text-align: start;
     background-color: var(--first-color);
     border-width: 0;
-    padding: 15px;
+    margin: 5px;
 
 }
 
 #loupe {
     width: 25px;
-    height: -25px;
-    margin: -20px;
     text-align: start;
 }
 
@@ -65,6 +67,7 @@ header {
     margin: 0;
     padding: 0;
     top: 0;
+    align-items: center;
 
 }
 
@@ -97,8 +100,8 @@ h2 {
 .firstdayimg {
     display: block;
     justify-content: center;
-    width: 350px;
-    height: 350px;
+    min-width: 100px;
+    max-width: 300px;
     margin: auto;
     padding: auto;
     text-align: center;
