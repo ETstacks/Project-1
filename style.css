@@ -17,20 +17,9 @@ body {
     --border-style: inset;
     --border-margin: 1em 1em;
     --border-padding: 1em 1em;
+    --border-color: lightgrey;
     --font-size-text: 16px;
     --font-size-sous-titre: 24px;
-
-}
-
-input {
-    display: flex;
-    width: 70px;
-    height: 20px;
-    background: var(--first-color);
-    border-width: 0.5px;
-    border-color: lightgrey;
-    margin: 25px;
-    padding: 10px;
 
 }
 
@@ -123,6 +112,7 @@ details {
     margin: var(--border-margin);
     margin-top: 1em;
     padding: var(--border-padding);
+    border-color: var(--border-color);
 }
 
 p {
