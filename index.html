@@ -30,7 +30,7 @@
 
 
 
-    <summary>
+    <summary id="trainingDay">
         <img class="firstdayimg" src="assets/tueur.jpg" alt="Image d'illustration d'article">
         <h2>Training Day: La meilleure façon de se préparer</h2>
         <i class="fa-solid fa-angle-right"></i>
@@ -60,7 +60,7 @@
 
 </details>
 <details>
-    <summary>
+    <summary id="work">
         <img class="articleimg" src="assets/workimg.jpg" alt="Image d'illustration d'article">
         <h3>
             Work: Le starter pack du Wilder
@@ -94,7 +94,7 @@
     </p>
 </details>
 <details>
-    <summary>
+    <summary id="stories">
         <img class="articleimg" src="assets/crane.jpg" alt="Image d'illustration d'article">
         <h3>
             Coiffure Lifestyle et Esthétique by Jessy
@@ -192,9 +192,12 @@
 
 <footer>
 
-    <a href="#"><img src="assets/firstday.png" alt="Bouton footer"></a>
-    <a href="#"><img src="assets/work.png" alt="Bouton footer"></a>
-    <a href="#"><img src="assets/stories.png" alt="Bouton footer"></a>
+    <a href="#trainingDay" class="boutonFooter" onClick="openDetail(closest)"><img src="assets/firstday.png"
+            alt="Bouton footer"></a>
+    <a href="#work" class="boutonFooter" onClick="openDetail(closest)"><img src="assets/work.png"
+            alt="Bouton footer"></a>
+    <a href="#stories" class="boutonFooter" onClick="openDetail(closest)"><img src="assets/stories.png"
+            alt="Bouton footer"></a>
 
 </footer>
 
