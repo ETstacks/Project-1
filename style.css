@@ -105,7 +105,7 @@ h2 {
     font-size: var(--font-size-titre);
 }
 
-#firstdayimg {
+.firstdayimg {
     display: block;
     justify-content: center;
     width: 350px;
@@ -192,35 +192,9 @@ h3 {
 
 }
 
-#articleimg {
+.articleimg {
     float: left;
     margin: 0 10px 10px 0;
     width: 150px;
     height: 150px;
-}
-
-summary .fa-chevron-down2 {
-
-    display: none;
-}
-
-details[open] .fa-chevron-down2 {
-    display: initial;
-    color: var(--first-color);
-}
-
-summary .fa-angle-right2 {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--first-color);
-    border: 3px solid;
-    border-radius: 50%;
-    width: 1.2rem;
-    height: 1.2rem;
-}
-
-details[open] .fa-angle-right2 {
-    display: none;
-
 }
