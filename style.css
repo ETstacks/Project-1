@@ -49,7 +49,7 @@ button {
 
 #loupe {
     width: 25px;
-    text-align: start;
+
 }
 
 #logo {
@@ -79,7 +79,7 @@ footer {
     background-color: var(--first-color);
     flex-direction: row;
     justify-content: space-around;
-    position: sticky;
+    position: fixed;
     width: 100%;
     bottom: 0;
     margin: 0;
@@ -197,4 +197,54 @@ h3 {
     margin: 0 10px 10px 0;
     width: 150px;
     height: 150px;
+}
+
+.boutonHeader {
+    display: none;
+
+}
+
+@media screen and (min-width: 800px) {
+
+    body,
+    html {
+        max-width: 100%;
+    }
+
+
+    footer {
+        visibility: hidden;
+    }
+
+    #containerHeader {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px;
+        background-color: lightgray;
+        margin-left: 0;
+        margin-right: 0;
+        border-top: 3px solid gray;
+        position: fixed;
+        width: 100%;
+    }
+
+    header {
+        max-height: 70px;
+
+    }
+
+    .boutonHeader {
+        display: block;
+    }
+
+    h1 {
+        font-size: 40px;
+        padding-right: 190px;
+    }
+
+    #logo {
+        width: 70px;
+        height: 70px;
+        padding: 100px;
+    }
 }
