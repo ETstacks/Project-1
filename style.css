@@ -8,6 +8,7 @@ body {
     background: smokewhite;
     margin-top: 10px;
     --first-color: #D5D2C8;
+    --second-color: #F76C6C;
     max-width: 800px;
     --font-size-titre: 40px;
     --font-titre: 'Roboto Slab';
@@ -20,6 +21,8 @@ body {
     --border-color: lightgrey;
     --font-size-text: 16px;
     --font-size-sous-titre: 24px;
+
+
 
 }
 
@@ -124,6 +127,10 @@ p {
     font-size: var(--font-size-text);
 }
 
+summary {
+    padding-top: 50px;
+}
+
 details>summary {
 
     list-style: none;
@@ -140,14 +147,14 @@ summary .fa-chevron-down {
 
 details[open] .fa-chevron-down {
     display: initial;
-    color: var(--first-color);
+    color: var(--second-color);
 }
 
 summary .fa-angle-right {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: var(--first-color);
+    color: var(--second-color);
     border: 3px solid;
     border-radius: 50%;
     width: 1.2rem;
