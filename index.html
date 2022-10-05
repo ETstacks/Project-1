@@ -23,10 +23,57 @@
     <h1>The Wild Post</h1>
 
     <button id="boutonLoupe"><img id="loupe" src="assets/loupe.png" alt="Bouton de recherche"> </button>
-
-
 </header>
-<section id=containerHeader>
+
+
+<section class="carousel">
+    <ul class="carousel-items">
+        <li class="carousel-item">
+            <div class="card">
+                <h2 class="card-title">Training Day: La meilleure façon de se préparer</h2>
+                <img class="Image" src="assets/model.JPG" />
+                <div class="card-content">
+                    <h4>Training Day</h4>
+                    <a href="#" class="button">Read more</a>
+                </div>
+            </div>
+        </li>
+        <li class="carousel-item">
+            <div class="card">
+                <h2 class="card-title">Work: Le starter pack du Wilder</h2>
+                <img class="Image" src="assets/workimg.jpg" />
+                <div class="card-content">
+                    <h4>Work</h4>
+                    <a href="#" class="button">Read more</a>
+                </div>
+            </div>
+        </li>
+        <li class="carousel-item">
+            <div class="card">
+                <h2 class="card-title">Coiffure Lifestyle et Esthétique by Jessy</h2>
+                <img class="Image" src="assets/crane.jpg" />
+                <div class="card-content">
+                    <h4>Coiffure Lifestyle</h4>
+                    <a href="#" class="button">Read more</a>
+                </div>
+            </div>
+        </li>
+        <li class="carousel-item">
+            <div class="card">
+                <h2 class="card-title">Morning routine Mounir</h2>
+                <img class="Image" src="assets/reveil.jpg" />
+                <div class="card-content">
+                    <h4>Morning Routine</h4>
+                    <a href="#" class="button">Read more</a>
+                </div>
+            </div>
+        </li>    
+    </ul>
+</section>
+
+
+
+  <section id=containerHeader>
     <a href="#trainingDay" class="boutonHeader" onClick="openDetail(closest)"><img src="assets/firstday.png"
             alt="Bouton header"></a>
     <a href="#work" class="boutonHeader" onClick="openDetail(closest)"><img src="assets/work.png"
@@ -35,9 +82,7 @@
             alt="Bouton header"></a>
 </section>
 
-<details id="trainingDayDetails">
-
-
+  <details id="trainingDayDetails">
 
     <summary id="trainingDay">
         <img class="firstdayimg" src="assets/model.jpg" alt="Image d'illustration d'article">
@@ -143,7 +188,6 @@
         <strong>Sinon des conseils capillaires pour nos lecteurs?</strong><br>
         Il faut aimer le cheveu avant tout. Et beaucoup de travail. Du sang et des larmes comme disait l’autre.
     </p>
-
 </details>
 
 <details>
@@ -200,7 +244,6 @@
 </details>
 
 <footer>
-
     <a href="#trainingDay" class="boutonFooter" onClick="openDetail(closest)"><img src="assets/firstday.png"
             alt="Bouton footer"></a>
     <a href="#work" class="boutonFooter" onClick="openDetail(closest)"><img src="assets/work.png"
