@@ -31,7 +31,7 @@ h1 {
     font-size: 24px;
     font-family: 'Bodoni Moda';
     min-width: 160px;
-    color: #3d3c39;
+    color: rgba(0, 0, 0, 255);
     text-align: center;
     margin-right: 40px;
 
@@ -248,4 +248,11 @@ h3 {
         padding: 100px;
     }
 
+    h3 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
 }
