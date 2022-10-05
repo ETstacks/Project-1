@@ -247,4 +247,10 @@ h3 {
         height: 70px;
         padding: 100px;
     }
-}
+    h3 {
+        font-size:30px ;
+    }
+    p {
+        font-size:20px ;
+    }
+}   
