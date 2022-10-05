@@ -15,7 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7e603d53fd.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>The Wild Post</title>
 </head>
 <header>
@@ -36,7 +36,7 @@
 </section>
 
 
-<details>
+<details class=mobileDetails>
 
 
 
@@ -83,7 +83,7 @@
 
 
 </details>
-<details id="workDetails">
+<details id="workDetails" class=mobileDetails>
     <summary id="work">
         <img class="articleimg" src="assets/workimg.jpg" alt="Image d'illustration d'article">
         <h3>
@@ -119,7 +119,7 @@
         le privilège de le lire meilleure et autrement plus riche.” src: Un wilder qui a souhaité garder l’anonymat.
     </p>
 </details>
-<details>
+<details class=mobileDetails>
     <summary id="stories">
         <img class="articleimg" src="assets/crane.jpg" alt="Image d'illustration d'article">
         <h3>
@@ -165,7 +165,7 @@
 
 </details>
 
-<details>
+<details class=mobileDetails>
     <summary>
         <img class="articleimg" src="assets/reveil.jpg" alt="Image d'illustration d'article">
         <h3>
@@ -195,7 +195,7 @@
         graines le matin…
     </p>
 </details>
-<details>
+<details class=mobileDetails>
     <summary>
         <img class="articleimg" src="assets/bar.jpg" alt="Image d'illustration d'article">
         <h3>
@@ -222,7 +222,7 @@
 
 </details>
 
-<details>
+<details class=mobileDetails>
     <summary>
         <img class="articleimg" src="assets/reveil.jpg" alt="Image d'illustration d'article">
         <h3>
@@ -253,7 +253,7 @@
     </p>
 </details>
 
-<details id="dernierArticleDetails">
+<details id="dernierArticleDetails" class=mobileDetails>
     <summary>
         <img class="articleimg" src="assets/reveil.jpg" alt="Image d'illustration d'article">
         <h3>
@@ -283,6 +283,51 @@
         graines le matin…
     </p>
 </details>
+<section class="containerTitle">
+    <h3 class="titleTop">titre exemple</h3>
+    <h3 class="titleTop">titre exemple</h3>
+    <h3 class="titleTop">titre exemple</h3>
+</section>
+<section id="topPage">
+    <img class="imgDesktopLeft" src="assets/crane.jpg">
+    <img class="imgDesktop" src="assets/workimg.jpg">
+    <img class="imgDesktopRight" src="assets/reveil.jpg">
+
+</section>
+<section class="containerButton">
+
+    <button id="buttonTopLeft" class="focus-button" data-focus="imgDesktopLeft">Focus</button>
+
+    <button id="buttonTopCenter">Focus</button>
+
+    <button id="buttonTopRight" class="focus-button" data-focus="imgDesktopRight">Focus</button>
+</section>
+<section id="articleBottom">
+    <details class="subArticleLeft">
+        <p>texte exemple</p>
+
+
+        <summary class="subArticleLeft">
+            <h3>titre exemple</h3>
+
+            <img class="imgSousArticle" src="assets/bar.jpg">
+
+
+        </summary>
+    </details>
+    <details class="subArticleRight">
+        <p>texte exemple</p>
+
+
+        <summary class="subArticleRight">
+            <h3>titre exemple</h3>
+
+            <img class="imgSousArticle" src="assets/reveil.jpg">
+
+
+        </summary>
+    </details>
+</section>
 
 <footer>
 
@@ -294,6 +339,7 @@
             alt="Bouton footer"></a>
 </footer>
 
+<script src="script.js"></script>
 
 </body>
 

@@ -228,19 +228,7 @@ h3 {
 
 
     footer {
-        visibility: hidden;
-    }
-
-    #containerHeader {
-        display: flex;
-        justify-content: space-around;
-        margin: 50px;
-        background-color: lightgray;
-        margin-left: 0;
-        margin-right: 0;
-        border-top: 3px solid gray;
-        position: fixed;
-        width: 100%;
+        display: none;
     }
 
     header {
@@ -248,9 +236,7 @@ h3 {
 
     }
 
-    .boutonHeader {
-        display: block;
-    }
+
 
     h1 {
         font-size: 40px;
@@ -269,5 +255,109 @@ h3 {
 
     p {
         font-size: 20px;
+    }
+
+    .mobileDetails {
+        display: none;
+    }
+
+    #topPage {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 3px solid lightgray;
+        padding-bottom: 25px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .titleTop {
+        padding-top: 50px;
+    }
+
+    .containerTitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .imgDesktop {
+        width: 600px;
+
+
+    }
+
+    .imgDesktopLeft {
+        width: 500px;
+        height: 400px;
+
+    }
+
+    #buttonTopCenter {
+        width: 100px;
+        height: 60px;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    #buttonTopLeft {
+        width: 100px;
+        height: 60px;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    #buttonTopRight {
+        width: 100px;
+        height: 60px;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    .containerButton {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .imgDesktopRight {
+        width: 500px;
+        height: 400px;
+
+    }
+
+
+    #articleBottom {
+        display: flex;
+        justify-content: space around;
+    }
+
+    .subArticleRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+        border-left: 3px solid lightgray;
+        border-bottom: none;
+        padding-top: 0px;
+    }
+
+    .subArticleLeft {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        border-right: 3px solid lightgray;
+        border-bottom: none;
+        padding-top: 0px;
+        padding-bottom: 10px;
+
+    }
+
+    .imgSousArticle {
+        width: 500px;
     }
 }
