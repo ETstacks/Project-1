@@ -23,14 +23,6 @@
     <h1>The Wild Post</h1>
 
     <button id="boutonLoupe"><img id="loupe" src="assets/loupe.png" alt="Bouton de recherche"> </button>
-    <section id=containerHeader>
-    <a href="#trainingDay" class="boutonHeader" onClick="openDetail(closest)"><img src="assets/firstday.png"
-            alt="Bouton header"></a>
-    <a href="#work" class="boutonHeader" onClick="openDetail(closest)"><img src="assets/work.png"
-            alt="Bouton header"></a>
-    <a href="#stories" class="boutonHeader" onClick="openDetail(closest)"><img src="assets/stories.png"
-            alt="Bouton header"></a>
-</section>
 </header>
 
 
@@ -38,41 +30,35 @@
     <ul class="carousel-items">
         <li class="carousel-item">
             <div class="card">
-                <h2 class="card-title">Training Day: La meilleure façon de se préparer</h2>
+                
                 <img class="Image" src="assets/model.JPG" />
+                <h2 class="card-title"><a href="#trainingDay" class="buttoncarousel"><img src="assets/flèche.png"></a>Training Day: La meilleure façon de se préparer</h2>
                 <div class="card-content">
-                    <h4>Training Day</h4>
-                    <a href="#trainingDay" class="buttoncarousel"><img src="assets/flèche.png"></a>
                 </div>
             </div>
         </li>
         <li class="carousel-item">
             <div class="card">
-                <h2 class="card-title">Work: Le starter pack du Wilder</h2>
                 <img class="Image" src="assets/workimg.jpg" />
+                <h2 class="card-title"> <a href="#work" class="buttoncarousel"><img src="assets/flèche.png"></a>Work: Le starter pack du Wilder</h2>
                 <div class="card-content">
-                    <h4>Work</h4>
-                    <a href="#work" class="buttoncarousel"><img src="assets/flèche.png"></a>
+                    
                 </div>
             </div>
         </li>
         <li class="carousel-item">
             <div class="card">
-                <h2 class="card-title">Coiffure Lifestyle et Esthétique by Jessy</h2>
                 <img class="Image" src="assets/crane.jpg" />
+                <h2 class="card-title"><a href="#stories" class="buttoncarousel"><img src="assets/flèche.png"></a>Coiffure Lifestyle et Esthétique by Jessy</h2>
                 <div class="card-content">
-                    <h4>Coiffure Lifestyle</h4>
-                    <a href="#stories" class="buttoncarousel"><img src="assets/flèche.png"></a>
                 </div>
             </div>
         </li>
         <li class="carousel-item">
             <div class="card">
-                <h2 class="card-title">Morning routine Mounir</h2>
                 <img class="Image" src="assets/reveil.jpg" />
+                <h2 class="card-title"><a href="#morning" class="buttoncarousel"><img src="assets/flèche.png"></a>Morning routine Mounir</h2>
                 <div class="card-content">
-                    <h4>Morning Routine</h4>
-                    <a href="#morning" class="buttoncarousel"><img src="assets/flèche.png"></a>
                 </div>
             </div>
         </li>       
@@ -80,8 +66,8 @@
 </section>
 
 
-  <details id="trainingDayDetails">
 
+  <details id="trainingDayDetails">
 
     <summary id="trainingDay">
         <img class="firstdayimg" src="assets/model.jpg" alt="Image d'illustration d'article">
@@ -187,10 +173,9 @@
         <strong>Sinon des conseils capillaires pour nos lecteurs?</strong><br>
         Il faut aimer le cheveu avant tout. Et beaucoup de travail. Du sang et des larmes comme disait l’autre.
     </p>
-
 </details>
 
-<details>
+<details id=" morning">
     <summary>
         <img class="articleimg" src="assets/reveil.jpg" alt="Image d'illustration d'article">
         <h3>
@@ -244,7 +229,6 @@
 </details>
 
 <footer>
-
     <a href="#trainingDay" class="boutonFooter" onClick="openDetail(closest)"><img src="assets/firstday.png"
             alt="Bouton footer"></a>
     <a href="#work" class="boutonFooter" onClick="openDetail(closest)"><img src="assets/work.png"
@@ -256,5 +240,7 @@
 
 </body>
 
+
+</html>
 
 </html>
