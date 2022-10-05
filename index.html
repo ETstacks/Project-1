@@ -23,6 +23,14 @@
     <h1>The Wild Post</h1>
 
     <button id="boutonLoupe"><img id="loupe" src="assets/loupe.png" alt="Bouton de recherche"> </button>
+    <section id=containerHeader>
+    <a href="#trainingDay" class="boutonHeader" onClick="openDetail(closest)"><img src="assets/firstday.png"
+            alt="Bouton header"></a>
+    <a href="#work" class="boutonHeader" onClick="openDetail(closest)"><img src="assets/work.png"
+            alt="Bouton header"></a>
+    <a href="#stories" class="boutonHeader" onClick="openDetail(closest)"><img src="assets/stories.png"
+            alt="Bouton header"></a>
+</section>
 </header>
 
 
@@ -72,17 +80,8 @@
 </section>
 
 
-
-  <section id=containerHeader>
-    <a href="#trainingDay" class="boutonHeader" onClick="openDetail(closest)"><img src="assets/firstday.png"
-            alt="Bouton header"></a>
-    <a href="#work" class="boutonHeader" onClick="openDetail(closest)"><img src="assets/work.png"
-            alt="Bouton header"></a>
-    <a href="#stories" class="boutonHeader" onClick="openDetail(closest)"><img src="assets/stories.png"
-            alt="Bouton header"></a>
-</section>
-
   <details id="trainingDayDetails">
+
 
     <summary id="trainingDay">
         <img class="firstdayimg" src="assets/model.jpg" alt="Image d'illustration d'article">
@@ -188,9 +187,10 @@
         <strong>Sinon des conseils capillaires pour nos lecteurs?</strong><br>
         Il faut aimer le cheveu avant tout. Et beaucoup de travail. Du sang et des larmes comme disait l’autre.
     </p>
+
 </details>
 
-<details id=" morning">
+<details>
     <summary>
         <img class="articleimg" src="assets/reveil.jpg" alt="Image d'illustration d'article">
         <h3>
@@ -244,6 +244,7 @@
 </details>
 
 <footer>
+
     <a href="#trainingDay" class="boutonFooter" onClick="openDetail(closest)"><img src="assets/firstday.png"
             alt="Bouton footer"></a>
     <a href="#work" class="boutonFooter" onClick="openDetail(closest)"><img src="assets/work.png"
