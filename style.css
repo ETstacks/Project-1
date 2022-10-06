@@ -269,12 +269,6 @@ h3 {
     }
 }
 
-.carousel-items {
-    display: flex;
-    overflow-x: scroll;
-    padding: 1rem 0;
-}
-
 .carousel-item {
     margin-left: 1rem;
 }
