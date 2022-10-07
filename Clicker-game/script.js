@@ -32,7 +32,12 @@ function saveGame() {
         betterCursors: betterCursors,
         clickingPower: clickingPower,
         gloves: gloves,
-        autoclicks: autoclicks
+        autoclicks: autoclicks,
+        cursorCost: cursorCost,
+        betterCursorCost: betterCursorCost,
+        ultimateCursorCost: ultimateCursorCost,
+        gloveCost: gloveCost,
+        autoclickCost: autoclickCost
     };
     localStorage.setItem("gameSave", JSON.stringify(gameSave));
 }
@@ -51,6 +56,11 @@ function loadGame() {
     if (typeof savedGame.clickingPower !== undefined) clickingPower = savedGame.clickingPower;
     if (typeof savedGame.gloves !== undefined) gloves = savedGame.gloves;
     if (typeof savedGame.autoclicks !== undefined) autoclicks = savedGame.autoclicks;
+    if (typeof savedGame.autoclickCost !== undefined) autoclickCost = savedGame.autoclickCost;
+    if (typeof savedGame.cursorCost !== undefined) cursorCost = savedGame.cursorCost;
+    if (typeof savedGame.betterCursorCost !== undefined) betterCursorCost = savedGame.betterCursorCost;
+    if (typeof savedGame.gloveCost !== undefined) gloveCost = savedGame.gloveCost;
+    if (typeof savedGame.ultimateCursorCost !== undefined) ultimateCursorCost = savedGame.ultimateCursorCost;
 
 }
 window.onload = function () {
@@ -61,7 +71,10 @@ window.onload = function () {
     document.getElementById("ultimateCursors").innerHTML = ultimateCursors;
     document.getElementById("gloves").innerHTML = gloves;
     document.getElementById("autoclicks").innerHTML = autoclicks;
-
+    document.getElementById("cursorCost").innerHTML = cursorCost;
+    document.getElementById("betterCursorCost").innerHTML = betterCursorCost;
+    document.getElementById("ultimateCursorCost").innerHTML = ultimateCursorCost;
+    document.getElementById("autoclickCost").innerHTML = autoclickCost;
 };
 
 function addToScore(amount) {
