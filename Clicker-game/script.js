@@ -15,10 +15,13 @@ let autoclickCost = 100000;
 let finishGameCost = 1000000;;
 
 
+
 function play() {
     const audio = document.getElementById("audio");
     audio.play();
 }
+
+
 
 
 
@@ -29,7 +32,12 @@ function saveGame() {
         betterCursors: betterCursors,
         clickingPower: clickingPower,
         gloves: gloves,
-        autoclicks: autoclicks
+        autoclicks: autoclicks,
+        cursorCost: cursorCost,
+        betterCursorCost: betterCursorCost,
+        ultimateCursorCost: ultimateCursorCost,
+        gloveCost: gloveCost,
+        autoclickCost: autoclickCost
     };
     localStorage.setItem("gameSave", JSON.stringify(gameSave));
 }
@@ -48,6 +56,11 @@ function loadGame() {
     if (typeof savedGame.clickingPower !== undefined) clickingPower = savedGame.clickingPower;
     if (typeof savedGame.gloves !== undefined) gloves = savedGame.gloves;
     if (typeof savedGame.autoclicks !== undefined) autoclicks = savedGame.autoclicks;
+    if (typeof savedGame.autoclickCost !== undefined) autoclickCost = savedGame.autoclickCost;
+    if (typeof savedGame.cursorCost !== undefined) cursorCost = savedGame.cursorCost;
+    if (typeof savedGame.betterCursorCost !== undefined) betterCursorCost = savedGame.betterCursorCost;
+    if (typeof savedGame.gloveCost !== undefined) gloveCost = savedGame.gloveCost;
+    if (typeof savedGame.ultimateCursorCost !== undefined) ultimateCursorCost = savedGame.ultimateCursorCost;
 
 }
 window.onload = function () {
@@ -58,7 +71,10 @@ window.onload = function () {
     document.getElementById("ultimateCursors").innerHTML = ultimateCursors;
     document.getElementById("gloves").innerHTML = gloves;
     document.getElementById("autoclicks").innerHTML = autoclicks;
-
+    document.getElementById("cursorCost").innerHTML = cursorCost;
+    document.getElementById("betterCursorCost").innerHTML = betterCursorCost;
+    document.getElementById("ultimateCursorCost").innerHTML = ultimateCursorCost;
+    document.getElementById("autoclickCost").innerHTML = autoclickCost;
 };
 
 function addToScore(amount) {
@@ -154,4 +170,6 @@ setInterval(function () {
     document.getElementById("score").innerHTML = score;
 },
     10);
+
+alert("How to play: click the image to get 1 score.  If you buy cursor : 1 score per second.  If you buy better cursor : 2 score per second.  If you buy ultimate cursor : 4 score per second.  If you buy glove: 1 more score per click.  If you buy Autoclick: 1000 score per second. The goal is to get 1 million score, good luck")
 
