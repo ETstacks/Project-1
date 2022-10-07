@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game - Wild Post</title>
+    <link href="style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <a href="../index.html" rel="nofollow noopener noreferrer" target="_blank"><img src="assets/WCS_logo.png"
+            width="50px"></a>
+    <section id="clicked">
+        <strong>
+            <p>Score : <span id="score">0</span></p>
+        </strong>
+        <img src="assets/mayuriO.png" height="256px" width="200px" onclick="addToScore(clickingPower)">
+
+    </section>
+    <section id="buystuff">
+        <button class="stuff" onclick="buyCursor()"> <img src="assets/cursor.png" width="30px">Buy cursor |<span
+                id="cursorCost">price: 10</span> -- <span id="cursors">
+                0</span></button>
+
+        <button class="stuff" onclick="buyBetterCursor()"><img src="assets/cursor2.png" width="30px">Buy better cursor |
+            <span id="betterCursorCost">price: 50</span> --
+            <span id="betterCursors">0</span></button>
+        <button class="stuff" onclick="buyUltimateCursor()"> <img src="assets/cursor4.png" width="30px">Buy ultimate
+            cursor | <span id="ultimateCursorCost">
+                price: 100</span> -- <span id="ultimateCursors">0</span></button>
+        <button class="stuff" onclick="buyGlove()"><img src="assets/glove.png" width="30px">Buy glove | <span
+                id="gloveCost">price: 250</span> -- <span id="gloves">
+                0</span></button>
+
+        <button class="stuff" onclick="buyAutoclick()"> <img src="assets/cursor3.png" width="30px">
+            auto click | <span id="autoclickCost">price: 100 000</span> -- <span id="autoclicks">0</span></button>
+    </section>
+    <section id="finishcontainer">
+        <button id="finish" onclick="buyFinishGame()"> <img src="assets/trophee.png" width="60px"> Complete the game |
+            <span id="finishGameCost">price: 1 000 000
+            </span></button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
