@@ -15,6 +15,13 @@ let autoclickCost = 100000;
 let finishGameCost = 1000000;;
 
 
+function play() {
+    const audio = document.getElementById("audio");
+    audio.play();
+}
+
+
+
 function saveGame() {
     const gameSave = {
         score: score,
@@ -24,11 +31,15 @@ function saveGame() {
         gloves: gloves,
         autoclicks: autoclicks
     };
-    window.localStorage.setItem("gameSave", JSON.stringify(gameSave));
+    localStorage.setItem("gameSave", JSON.stringify(gameSave));
 }
+
+
 setInterval(function () {
     saveGame();
 }, 10000)
+
+
 function loadGame() {
     const savedGame = JSON.parse(localStorage.getItem("gameSave"));
     if (typeof savedGame.score !== undefined) score = savedGame.score;
@@ -57,7 +68,7 @@ function addToScore(amount) {
 }
 
 function buyCursor() {
-    if (score >= 1) {
+    if (score >= 10) {
         score = score - cursorCost
         cursors = cursors + 1;
         cursorCost = Math.round(cursorCost * 1.15);
@@ -68,7 +79,7 @@ function buyCursor() {
 }
 
 function buyAutoclick() {
-    if (score >= 1) {
+    if (score >= 100000) {
         score = score - autoclickCost
         autoclicks = autoclicks + 1;
         autoclickCost = Math.round(autoclickCost * 1.15);

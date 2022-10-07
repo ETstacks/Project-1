@@ -18,6 +18,10 @@ img {
 
 }
 
+#hitmarker {
+    object-fit: cover;
+}
+
 .stuff {
     height: 50px;
 }
