@@ -15,10 +15,13 @@ let autoclickCost = 100000;
 let finishGameCost = 1000000;;
 
 
+
 function play() {
     const audio = document.getElementById("audio");
     audio.play();
 }
+
+
 
 
 
@@ -154,4 +157,6 @@ setInterval(function () {
     document.getElementById("score").innerHTML = score;
 },
     10);
+
+alert("How to play: click the image to get 1 score.  If you buy cursor : 1 score per second.  If you buy better cursor : 2 score per second.  If you buy ultimate cursor : 4 score per second.  If you buy glove: 1 more score per click.  If you buy Autoclick: 1000 score per second. The goal is to get 1 million score, good luck")
 
