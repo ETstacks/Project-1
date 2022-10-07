@@ -13,13 +13,15 @@
 </head>
 
 <body>
+    <audio id="audio" src="assets/hitmarkersound.mp3"></audio>
     <a href="../index.html" rel="nofollow noopener noreferrer" target="_blank"><img src="assets/WCS_logo.png"
             width="50px"></a>
     <section id="clicked">
         <strong>
             <p>Score : <span id="score">0</span></p>
         </strong>
-        <img src="assets/mayuriO.png" height="256px" width="200px" onclick="addToScore(clickingPower)">
+        <img id="hitmarker" src="assets/hitmarker.png" height="256px" width="200px"
+            onclick="addToScore(clickingPower);play()">
 
     </section>
     <section id="buystuff">
@@ -45,7 +47,8 @@
             <span id="finishGameCost">price: 1 000 000
             </span></button>
     </section>
-
+    <button onclick="saveGame()">save game</button>
+    <button onclick="loadGame()">load game</button>
     <script src="script.js"></script>
 </body>
 
